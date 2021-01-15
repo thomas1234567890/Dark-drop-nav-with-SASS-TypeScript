@@ -10,13 +10,23 @@ $pink: #f4acb7;
 $peach: #eabbb2;
 $light_blue: #abd4ea;
 
+/* NAV*/
+
+$font_large: 30px;
+$font_medium:17px;
+$nav_height: 100px;
+$nav_background_color: $black_background;
+$nav_color: $white;
+$nav_padding: 0;
+$nav_margin: 0;
+
 /*sizes*/
 $large: 48px;
 
-/*colors for cards & slides*/
+/*cards & slides*/
 
-  $initialTextColor: #94a1b2;
-  $slideTextColor: #fff;
+$initialTextColor: #94a1b2;
+$slideTextColor: #fff;
 
-  $initialBgColor: #010101;
-  $slideBgColor: #9F9FED;
+$initialBgColor: #010101;
+$slideBgColor: #9f9fed;

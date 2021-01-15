@@ -1,1 +1,35 @@
 @import "./_variables.scss";
+
+.nav {
+  box-sizing: border-box;
+  background-color: $black_background;
+  color: $nav_color;
+  height: $nav_height;
+  width: 100vw;
+  padding: $nav_padding;
+  margin: $nav_margin;
+  position: fixed;
+}
+
+.nav_logo,
+.nav_list,
+.nav_list_item {
+  display: inline;
+}
+
+.nav_logo {
+  font-size: $font_large;
+}
+
+.nav_list {
+  background-color: yellow;
+  color: red;
+  border: solid 1px red;
+  float: right;
+  margin: 40px 140px 0 0;
+}
+.nav_list_item {
+  &:hover {
+    background-color: red;
+  }
+}

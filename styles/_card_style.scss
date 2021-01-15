@@ -1,0 +1,83 @@
+@import "./_variables.scss";
+
+/*Hard Coded Cards*/
+
+/*repace with nav*/
+.card_container {
+  display: inline-flex;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 380px;
+  height: 580px;
+  position: relative;
+  text-align: center;
+}
+
+.card_icon_container {
+  height: 140px;
+  width: 140px;
+  background-color: $black_background;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  left: 120px;
+}
+
+.card_icon {
+  position: relative;
+  top: 46px;
+}
+.card_icon i {
+  font-size: $large;
+}
+
+.card_header {
+  position: relative;
+  top: 180px;
+  font-size: 30px;
+}
+
+.card_discription {
+  position: relative;
+  top: 200px;
+  font-size: 17px;
+  opacity: 0;
+}
+@mixin slider($bg_color) {
+  color: $initialTextColor;
+
+  background-image: linear-gradient(
+    $initialBgColor 0%,
+    $initialBgColor 50%,
+    $bg_color 50%,
+    $bg_color 100%
+  );
+  background-size: 100% 200%;
+  transition: background-position 0.3s ease-in-out, 0.1s linear;
+
+  &:hover {
+    color: $slideTextColor;
+    cursor: pointer;
+    background-position: 100% 100%;
+  }
+}
+
+.card_1 {
+  @include slider($dark_purple);
+}
+.card_2 {
+  @include slider($light_blue);
+}
+.card_3 {
+  @include slider($peach);
+}
+.card_4 {
+  @include slider($pink);
+}
+.card_5 {
+  @include slider($light_purple);
+}

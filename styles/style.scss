@@ -1,53 +1,5 @@
 @import "./_variables.scss";
+@import "./_card_style.scss";
+@import "./_nav_style.scss";
 
 /*repace with nav*/
-.card_container {
-  box-sizing: border-box;
-}
-
-.card {
-  width: 380px;
-  height: 580px;
-
-  position :relative;
-  
-  color: $text_gray;
-  background-color: $black_background;
-  text-align: center;
-  &:hover {
-    color: $white;
-  }
-}
-.card_1 {
-  &:hover {
-    background-color: $dark_purple;
-  }
-}
-
-.card_icon {
-  height: 140px;
-  width: 140px;
-  background-color: red;
-  position: relative;
-  top: 100px;
-  left:120px;
-}
-
-.card_header {
-  margin-top: 150px;
-  font-size: 30px;
-}
-
-.card_discription {
-  font-size: 17px;
-  margin: 12px 0;
-}
-
-.ruler {
-  width: 100px;
-  height: 580px;
-  background-color: red;
-  position: fixed;
-  top: 0;
-  right: 0;
-}

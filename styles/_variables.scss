@@ -3,30 +3,55 @@ $black_background: #010101;
 $white: #fff;
 $text_gray: #94a1b2;
 
+/* NAV*/
+$font_large: 2rem;
+$font_medium: 1rem;
+$nav_height: 1rem;
+$nav_width: 100%;
+$nav_background_color: #333;
+$nav_background: $nav_background_color;
+$nav_padding: 0;
+$nav_margin: 0;
+$nav_list_margin: 0;
+$nav_list_padding: 0 2rem 0 0;
+$nav_list_item_padding: 1rem 2rem 1rem 0;
+
+/*Cards*/
 $card_nav: #010101;
 $dark_purple: #7c81e3;
 $light_purple: #9f9fed;
 $pink: #f4acb7;
 $peach: #eabbb2;
 $light_blue: #abd4ea;
-
-/* NAV*/
-
-$font_large: 30px;
-$font_medium:17px;
-$nav_height: 100px;
-$nav_background_color: $black_background;
-$nav_color: $white;
-$nav_padding: 0;
-$nav_margin: 0;
-
-/*sizes*/
-$large: 48px;
+$large_icon: 3rem;
+$card_cointainer_space_for_top: 50px;
+$card_width: 20vw;
+$card_height: 60vh;
+$card_icon_container_width: 6rem;
+$card_icon_container_height: 6rem;
+$card_icon_container_border_radius: 20px;
+$card_icon_container_top: 10vh;
+// $card_icon_container_left: 5vw;
+// $card_icon_top: 46px;
+$card_header: 30vh;
+$card_font_size: 1rem;
 
 /*cards & slides*/
-
 $initialTextColor: #94a1b2;
 $slideTextColor: #fff;
-
 $initialBgColor: #010101;
 $slideBgColor: #9f9fed;
+
+// $light_blue: #abd4ea;
+// $large_icon: 3rem;
+// $card_cointainer_space_for_top: 50px;
+// $card_width: 380px;
+// $card_height: 580px;
+// $card_icon_container_width: 140px;
+// $card_icon_container_height: 140px;
+// $card_icon_container_border_radius: 20px;
+// $card_icon_container_top: 100px;
+// $card_icon_container_left: 120px;
+// $card_icon_top: 46px;
+// $card_header: 180px;
+// $card_font_size: 30px;

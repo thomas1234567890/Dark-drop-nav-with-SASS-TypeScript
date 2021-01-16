@@ -4,49 +4,60 @@
 
 /*repace with nav*/
 .card_container {
+  display: none;
+  position: fixed;
+  top: $card_cointainer_space_for_top;
+}
+.show_cards {
   display: inline-flex;
 }
 
 .card {
   box-sizing: border-box;
-  width: 380px;
-  height: 580px;
+  width: $card_width;
+  height: $card_height;
   position: relative;
   text-align: center;
 }
 
 .card_icon_container {
-  height: 140px;
-  width: 140px;
+  height: $card_icon_container_height;
+  width: $card_icon_container_width;
   background-color: $black_background;
-  border-radius: 20px;
+  border-radius: $card_icon_container_border_radius;
   position: relative;
   display: flex;
   justify-content: center;
-  top: 100px;
-  left: 120px;
+  top: $card_icon_container_top;
+  // left: $card_icon_container_left;
+  margin: 0 auto;
 }
 
 .card_icon {
   position: relative;
-  top: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // top: $card_icon_top;
 }
 .card_icon i {
-  font-size: $large;
+  font-size: $large_icon;
 }
 
 .card_header {
   position: relative;
-  top: 180px;
-  font-size: 30px;
+  top: $card_header;
+  font-size: $card_font_size;
 }
 
+/*wip*/
 .card_discription {
   position: relative;
   top: 200px;
   font-size: 17px;
   opacity: 0;
 }
+
 @mixin slider($bg_color) {
   color: $initialTextColor;
 

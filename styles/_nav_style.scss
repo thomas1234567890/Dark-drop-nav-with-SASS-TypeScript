@@ -1,35 +1,31 @@
 @import "./_variables.scss";
 
 .nav {
-  box-sizing: border-box;
-  background-color: $black_background;
-  color: $nav_color;
-  height: $nav_height;
-  width: 100vw;
-  padding: $nav_padding;
-  margin: $nav_margin;
   position: fixed;
-}
+  top: 0;
+  width: $nav_width;
+  height: $nav_height; 
 
-.nav_logo,
-.nav_list,
-.nav_list_item {
-  display: inline;
-}
+  ul {
+    list-style-type: none;
+    margin: $nav_list_margin; 
+    padding: $nav_list_padding;
+    overflow: hidden;
+    background-color: $nav_background;
+  }
 
-.nav_logo {
-  font-size: $font_large;
-}
+  li {
+    float: right;
+  }
 
-.nav_list {
-  background-color: yellow;
-  color: red;
-  border: solid 1px red;
-  float: right;
-  margin: 40px 140px 0 0;
-}
-.nav_list_item {
-  &:hover {
-    background-color: red;
+  li a {
+    display: block;
+    text-align: center;
+    color: $text_gray;
+    padding: $nav_list_item_padding;
+    text-decoration: none;
+  }
+  li :hover {
+    color: $white;
   }
 }

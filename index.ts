@@ -1,43 +1,23 @@
 // Import stylesheets
 import "./styles/style.scss";
 
-console.clear()
+console.clear();
 
+////show course cards
+const item = document
+  .getElementById("courses_nav_item")
+  .addEventListener("click", toggle_course_cards);
 
+function toggle_course_cards() {
+  console.log("clicked");
+  document.getElementById("card_container").classList.toggle("show_cards");
+}
 
-/*make text visible on card hover*/
+////close all menus when users click elsewhere
+const app = document.getElementById("app");
+app.addEventListener("click", close_all);
 
-// const on_card_mouse_enter =() =>
-// {
-//   document.getElementById('card_discription').style.opacity='1';
-// }
-// const on_card_mouse_leave =() =>
-// {
-//   document.getElementById('card_discription').style.opacity='0';
-// } 
-
-// const el = document.getElementById("card_1");
-// el.addEventListener("mouseenter", on_card_mouse_enter);
-// el.addEventListener("mouseleave", on_card_mouse_leave);
-
-
-
-
-// document.querySelectorAll('.card').forEach(item => {
-//   item.addEventListener('mouseenter', function(e)
-//   {
-//     // console.log(e.target.id);
-//     // let x = document.getElementById(e.target.id)
-//     // let y = x.getElementsByClassName('card_discription');
-//     // console.log(y[0]);
-//     // y[0].innerHTML
-
-//     // let x = document.getElementById(e.target.id);
-//     // let y = x.getElementsByClassName('.card_discription');
-//     // y.style.opacity='1';
-    
-//   });
-
-
-//   // item.addEventListener("mouseleave", on_card_mouse_leave);
-// })
+function close_all() {
+  document.getElementById("card_container").classList.remove("show_cards");
+  console.log("cards cleared");
+}

@@ -3,6 +3,8 @@ import "./styles/style.scss";
 
 console.clear();
 
+///// NAV
+
 ////show course cards
 const item = document
   .getElementById("courses_nav_item")

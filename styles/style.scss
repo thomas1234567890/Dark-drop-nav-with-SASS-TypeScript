@@ -1,9 +1,13 @@
-@import "./_variables.scss";
-@import "./_card_style.scss";
-@import "./_nav_style.scss";
+@import './_variables.scss';
+@import './_card_style.scss';
+@import './_nav_style.scss';
 
 /*repace with nav*/
-#app
-{
-  margin:700px 0;
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+#app {
+  margin: 700px 0;
 }
